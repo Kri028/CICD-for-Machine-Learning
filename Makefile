@@ -24,7 +24,7 @@ push-hub:
 	pip install -U huggingface_hub
 	hf auth login --token "$(HF)"
 	hf upload Kri028/Drug-Classification ./App --repo-type=space
-	hf upload Kro028/Drug-Classification ./Model --repo-type=space
+	hf upload Kri028/Drug-Classification ./Model --repo-type=space
 	hf upload Kri028/Drug-Classification ./Results --repo-type=space
 
 deploy: push-hub
